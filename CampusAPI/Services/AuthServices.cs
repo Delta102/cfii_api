@@ -11,6 +11,7 @@ namespace CampusAPI.Services
     public interface IAuthServices
     {
         public Task<AuthResponse> Authenticate(string username, string password);
+        UserWithRole GetUserWithRoleById(int userId);
     }
     public class AuthServices : IAuthServices
     {
@@ -43,7 +44,7 @@ namespace CampusAPI.Services
         {
             var claims = new[]
                         {
-                new Claim(JwtRegisteredClaimNames.Sub, user.Username),
+                new Claim("Username", user.Username),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
             };
@@ -61,14 +62,27 @@ namespace CampusAPI.Services
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public MdlUser GetLoggedInUser(ClaimsPrincipal user)
+        public UserWithRole GetUserWithRoleById(int userId)
         {
-            var userId = user.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-            if (int.TryParse(userId, out int id))
-            {
-                return _dbContext.MdlUsers.SingleOrDefault(u => u.Id == id);
-            }
-            return null;
+            var userWithRole = _dbContext.MdlUsers
+                .Where(u => u.Id == userId)
+                .Join(_dbContext.MdlRoleAssignments,
+                    u => u.Id,
+                    ra => ra.Userid,
+                    (u, ra) => new { User = u, RoleAssignment = ra })
+                .Join(_dbContext.MdlRoles,
+                    ura => ura.RoleAssignment.Roleid,
+                    r => r.Id,
+                    (ura, r) => new { ura.User, Role = r })
+                .Select(ur => new UserWithRole
+                {
+                    User = ur.User,
+                    RoleId = ur.Role.Id,
+                    RoleName = ur.Role.Shortname
+                })
+                .FirstOrDefault();
+
+            return userWithRole;
         }
     }
 }

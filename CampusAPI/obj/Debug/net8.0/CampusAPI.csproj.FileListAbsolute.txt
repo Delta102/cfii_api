@@ -230,11 +230,6 @@ D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\runtimes\win\li
 D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
-D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\out\web.config
-D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\out\appsettings.Development.json
-D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\out\appsettings.json
-D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\out\CampusAPI.deps.json
-D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\out\CampusAPI.runtimeconfig.json
 D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
@@ -246,3 +241,4 @@ D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\Microsoft.Ident
 D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\IdentityModel.dll
 D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\IdentityModel.AspNetCore.OAuth2Introspection.dll
 D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\bin\Debug\net8.0\IdentityServer4.AccessTokenValidation.dll
+D:\Proyectos\Proyecto UNMSM\CampusAPI\CampusAPI\obj\Debug\net8.0\CampusAPI.sourcelink.json
