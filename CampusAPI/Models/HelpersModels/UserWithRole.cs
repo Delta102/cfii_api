@@ -7,5 +7,6 @@ namespace CampusAPI.Models.HelpersModels
         public MdlUser User { get; set; }
         public long RoleId { get; set; }
         public string RoleName { get; set; }
+        public string PictureUrl { get; set; }
     }
 }

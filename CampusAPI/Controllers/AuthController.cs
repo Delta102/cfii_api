@@ -32,14 +32,10 @@ namespace CampusAPI.Controllers
         [HttpGet("profile")]
         public IActionResult GetLoggedInUserProfile()
         {
-            var loggedInUser = HttpContext.User;
+        https://campusindustrial.unmsm.edu.pe/moodle/pluginfile.php/103896/user/icon/adaptable/f1?rev=10124763
 
-            // Código de depuración: listar todos los claims
-            var claims = loggedInUser.Claims;
-            foreach (var claim in claims)
-            {
-                Console.WriteLine($"Claim Type: {claim.Type}, Claim Value: {claim.Value}");
-            }
+
+            var loggedInUser = HttpContext.User;
 
             var userIdClaim = loggedInUser.FindFirst(ClaimTypes.NameIdentifier);
 

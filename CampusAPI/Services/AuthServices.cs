@@ -82,6 +82,24 @@ namespace CampusAPI.Services
                 })
                 .FirstOrDefault();
 
+            if (userWithRole != null)
+            {
+                // Obtener el contexto ID del usuario
+                var contextId = _dbContext.MdlContexts
+                    .Where(c => c.Contextlevel == 30 && c.Instanceid == userWithRole.User.Id)
+                    .Select(c => c.Id)
+                    .FirstOrDefault();
+
+                if (contextId != null)
+                {
+                    // Construir la URL de la imagen del usuario
+                    string pictureUrl = $"https://campusindustrial.unmsm.edu.pe/moodle/pluginfile.php/{contextId}/user/icon/adaptable/f1?rev={userWithRole.User.Picture}";
+
+                    // Aquí puedes devolver la URL de la imagen junto con el usuario y el rol
+                    userWithRole.PictureUrl = pictureUrl;
+                }
+            }
+
             return userWithRole;
         }
     }
