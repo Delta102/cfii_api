@@ -1,6 +1,7 @@
 using CampusAPI.Models.Icacit;
 using CampusAPI.Models.Moodle;
 using CampusAPI.Services;
+using CampusAPI.Services.Course;
 using CampusAPI.Services.TeacherServices;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -22,6 +23,7 @@ builder.Services.AddDbContext<IcacitDBContext>(options => options.UseMySql(
 //Add my services
 builder.Services.AddScoped<IAuthServices, AuthServices>();
 builder.Services.AddScoped<ITeacherServices, TeacherServices>();
+builder.Services.AddScoped<ICourseServices, CourseServices>();
 
 //JWT Config
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
