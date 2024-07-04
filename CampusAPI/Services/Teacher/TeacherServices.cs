@@ -1,21 +1,26 @@
-﻿using CampusAPI.Models.Moodle;
+﻿using CampusAPI.Models.Icacit;
+using CampusAPI.Models.Moodle;
+using System.Linq;
 
 namespace CampusAPI.Services.TeacherServices
 {   
     public interface ITeacherServices { 
-        List<MdlCourse> GetCoursesByUserIdAndRoles(int userId);
+        List<MdlCourse> GetCoursesByUserIdAndRoles(long userId);
+        List<MdlCourse> GetActiveCoursesBySemesterForUser(long userId);
     }
     public class TeacherServices: ITeacherServices
     {
-        public readonly MoodleDBContext _dbContext;
+        private readonly MoodleDBContext _dbContext;
+        private readonly IcacitDBContext _icacitDbContext;
 
-        public TeacherServices(MoodleDBContext dbContext)
+        public TeacherServices(MoodleDBContext dbContext, IcacitDBContext icacitDBContext)
         {
             _dbContext = dbContext;
+            _icacitDbContext = icacitDBContext;
         }
 
 
-        public List<MdlCourse> GetCoursesByUserIdAndRoles(int userId)
+        public List<MdlCourse> GetCoursesByUserIdAndRoles(long userId)
         {
             // Obtener las asignaciones de rol del usuario
             var roleAssignments = _dbContext.MdlRoleAssignments
@@ -50,6 +55,33 @@ namespace CampusAPI.Services.TeacherServices
                 .ToList();
 
             return courses;
+        }
+
+        public List<MdlCourse> GetActiveCoursesBySemesterForUser(long userId)
+        {
+            // Obtener el ID máximo del semestre desde Icacit
+            var maxSemesterId = _icacitDbContext.Semestres.Max(s => s.Id);
+
+            // Consultar los cursos activos del usuario para el semestre máximo en Icacit
+            var moodleCourseIds = _icacitDbContext.Aulas
+                                        .Where(a => a.Semestreid == maxSemesterId)
+                                        .Select(a => a.Moodlecourseid)
+                                        .ToList();
+
+            // Consultar los cursos activos del usuario en Moodle
+            var activeCourses = (from user in _dbContext.MdlUsers
+                                 join enrolment in _dbContext.MdlUserEnrolments on user.Id equals enrolment.Userid
+                                 join enrol in _dbContext.MdlEnrols on enrolment.Enrolid equals enrol.Id
+                                 join course in _dbContext.MdlCourses on enrol.Courseid equals course.Id
+                                 where user.Id == userId && moodleCourseIds.Contains((int)course.Id)
+                                 select new MdlCourse
+                                 {
+                                     Id = course.Id,
+                                     Fullname = course.Fullname,
+                                     Shortname = course.Shortname,
+                                 }).ToList();
+
+            return activeCourses;
         }
     }
 }

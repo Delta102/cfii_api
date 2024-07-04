@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|d:\\proyectos\\proyecto unmsm\\campusapi\\campusapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|solutionrelative:campusapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|d:\\proyectos\\proyecto unmsm\\campusapi\\campusapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|solutionrelative:campusapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|d:\\proyectos\\proyecto unmsm\\campusapi\\campusapi\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|solutionrelative:campusapi\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|d:\\proyectos\\proyecto unmsm\\campusapi\\campusapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|solutionrelative:campusapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|d:\\proyectos\\proyecto unmsm\\campusapi\\campusapi\\services\\teacher\\teacherservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|solutionrelative:campusapi\\services\\teacher\\teacherservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|d:\\proyectos\\proyecto unmsm\\campusapi\\campusapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|solutionrelative:campusapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|d:\\proyectos\\proyecto unmsm\\campusapi\\campusapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A066EE5-CDE1-4568-B8B9-231859F0CEA4}|CampusAPI\\CampusAPI.csproj|solutionrelative:campusapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 205,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeacherServices.cs",
+              "DocumentMoniker": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Services\\Teacher\\TeacherServices.cs",
+              "RelativeDocumentMoniker": "CampusAPI\\Services\\Teacher\\TeacherServices.cs",
+              "ToolTip": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Services\\Teacher\\TeacherServices.cs",
+              "RelativeToolTip": "CampusAPI\\Services\\Teacher\\TeacherServices.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAwwFEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T14:33:28.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "CampusAPI\\Controllers\\CourseController.cs",
+              "ToolTip": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "CampusAPI\\Controllers\\CourseController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T14:29:24.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Program.cs",
               "RelativeDocumentMoniker": "CampusAPI\\Program.cs",
@@ -47,54 +69,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeacherServices.cs",
-              "DocumentMoniker": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Services\\Teacher\\TeacherServices.cs",
-              "RelativeDocumentMoniker": "CampusAPI\\Services\\Teacher\\TeacherServices.cs",
-              "ToolTip": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Services\\Teacher\\TeacherServices.cs",
-              "RelativeToolTip": "CampusAPI\\Services\\Teacher\\TeacherServices.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T14:33:28.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TeacherController.cs",
               "DocumentMoniker": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Controllers\\TeacherController.cs",
               "RelativeDocumentMoniker": "CampusAPI\\Controllers\\TeacherController.cs",
               "ToolTip": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Controllers\\TeacherController.cs",
               "RelativeToolTip": "CampusAPI\\Controllers\\TeacherController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA6AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAwBEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-03T14:31:09.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "CampusAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "CampusAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T14:29:36.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "CampusAPI\\Controllers\\CourseController.cs",
-              "ToolTip": "D:\\Proyectos\\Proyecto UNMSM\\CampusAPI\\CampusAPI\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "CampusAPI\\Controllers\\CourseController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T14:29:24.803Z",
               "EditorCaption": ""
             }
           ]
